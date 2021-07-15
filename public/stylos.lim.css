@@ -1,0 +1,316 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 250px;
+    display: inline-flex;
+}
+#form{
+    
+    align-items: center;
+    align-content: center;
+    background:rgb(246, 247, 248);
+    padding: 0 45px 0;
+    box-shadow:  0 0 6px 0 rgb(167, 211, 247);
+    border-radius: 10px;
+    
+
+}
+.form h1{
+    padding: 10px;
+}
+.form{
+    width: 100%;
+    padding: 0 35px 0;
+    
+    
+}
+.form .h1{
+    text-align: center;
+    font-weight: 700;
+}
+form .grupo{
+    position: relative;
+    margin: 8px ;
+
+}
+input{
+    background: none;
+    color: rgb(255, 254, 254);
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{
+    outline: none;
+    color: rgb(94,91,93);
+}
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+input:focus~label,
+input:valid~label{
+    top:-14px;
+    font-size: 12px;
+    color #2196f3;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+button{
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: seashell;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:500px){
+    form{
+        width: 80%;
+    }
+}
+body
+
+/****estylos portada anterior*/
+/*******para las sub paginas*****/
+.title{
+    text-align: center;
+    font-size: 35px;
+    color: blue;
+    margin-top: 100px;
+    font-weight: 8em;
+    padding: 6em;
+}
+.contenido{
+    width: 100%;
+    max-width: auto;
+    height: 430px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: inherit;
+    justify-content: center;
+    margin-top: 209px;
+
+}
+.contenido .cards{
+    width: 450px;
+    height: 650px;
+    border-radius: 10px;
+    box-shadow: 0 2px rgb(46, 4, 233);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.20s;
+}
+.contenido .cards:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+}
+.contenido .cards img{
+    width: 250px;
+    height: 150px;
+}
+.contenido .cards h4{
+    font-weight: 600;
+    margin-top: 5px;
+}
+.contenido .cards p{
+    padding: 0 6px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 5px;
+}
+.contenido .cards a{
+    font-weight: 500;
+    text-decoration: none;
+    color:#3498db;
+    margin-top: 5px;
+
+}
+/********fin de contenido*******/
+/*****contenido2*****/
+
+.contenido2{
+    width: 100%;
+    max-width: auto;
+    height: 530px;
+    display: flex;
+    flex-wrap: inherit;
+    justify-content: center;
+    margin-top: 209px;
+
+}
+.contenido2 .cards2{
+    width: 330px;
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 0 2px rgb(46, 4, 233);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.20s;
+}
+.contenido2 .cards2:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+}
+.contenido2 .cards2 img{
+    width: 330px;
+    height: 220px;
+}
+.contenido2 .cards2 h4{
+    font-weight: 600;
+    margin-top: 5px;
+}
+.contenido2 .cards2 p{
+    padding: 0 6px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 5px;
+}
+.contenido2 .cards2 a{
+    font-weight: 500;
+    text-decoration: none;
+    color:#3498db;
+    margin-top: 5px;
+
+}
+/******fin de contenido******/
+@media (max-width: 768px){
+    .title{
+        text-align: center;
+        font-size: 15px;
+        color: blue;
+        margin-top: 50px;
+        font-weight: 4em;
+        padding: 2em;
+    }
+    .contenido{
+        width: 50%;
+        max-width: auto;
+        height: 130px;
+        display: flex;
+        flex-wrap: inherit;
+        justify-content: center;
+        margin-top: 89px;
+    
+    }
+    .contenido .cards{
+        width: 230px;
+        height: 120px;
+        border-radius: 5px;
+        box-shadow: 0 2px rgb(46, 4, 233);
+        overflow: hidden;
+        margin: 5px;
+       
+    }
+    .contenido .cards:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+    }
+    .contenido .cards img{
+        width: 115px;
+        height: 80px;
+    }
+    .contenido .cards h4{
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .contenido .cards p{
+        padding: 0 6px;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: justify;
+        margin-top: 5px;
+    }
+    .contenido .cards a{
+        font-weight: 500;
+        text-decoration: none;
+        color:#3498db;
+        margin-top: 5px;
+    
+    }
+
+}
+@media (max-width: 768px){
+
+    .contenido2{
+        width: 50%;
+        max-width: auto;
+        height: 130px;
+        display: flex;
+        flex-wrap: inherit;
+        justify-content: center;
+        margin-top: 89px;
+    
+    }
+    .contenido2 .cards2{
+        width: 430px;
+        height: 220px;
+        border-radius: 5px;
+        box-shadow: 0 2px rgb(46, 4, 233);
+        overflow: hidden;
+        margin: 5px;
+       
+    }
+    .contenido2 .cards2:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgb(0,0,0,0.2);
+    }
+    .contenido2 .cards2 img{
+        width: 115px;
+        height: 80px;
+    }
+    .contenido2 .cards2 h4{
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    .contenido2 .cards2 p{
+        padding: 0 6px;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: justify;
+        margin-top: 5px;
+    }
+    .contenido2 .cards2 a{
+        font-weight: 500;
+        text-decoration: none;
+        color:#3498db;
+        margin-top: 5px;
+    
+    }
+}

@@ -1,0 +1,194 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #3010e7; 
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-size: 2.3em;
+	line-height: 1.3em;
+	margin: 10px 0;
+	text-align: center;
+	font-weight: 300;
+}
+h4 {
+	font-size: 1.1em;
+	line-height: 0.8em;
+	margin: 3px 10;
+	text-align: center;
+	font-weight: 50;
+}
+p {
+	margin: 0 0 1.5em 0;
+}
+
+/*img {
+	max-width: 75%;
+	height: auto;
+}*/
+
+#cuadro{
+    border: rgba(17, 74, 231, 0.986) 3px solid;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 5px;
+}
+
+ /*líneas de CSS las usaremos para dar estilo a la cabecera:*/
+ #main-header {
+	background:#333;
+	color: white;
+	height: 150px;
+}	
+	#main-header a {
+		color: rgb(226, 238, 226);
+	}
+
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 20px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #0b76a6;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 400;
+		font-size: 1.2em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+        float: left;
+		font-weight: 15PX;
+		font-size: 0.8em;
+		color: #999;
+	}
+	
+
+/*
+ * Navegación
+ */
+nav {
+	float:auto;
+}
+	nav ul {
+		margin: 0;
+		padding: 5;
+		list-style: none;
+		padding-right: 15px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 20px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 5px;
+				text-decoration: darkblue;
+                
+			}
+			
+				nav ul li a:hover {
+					background: #254;   /*esto es para darle resalte al cuadro de cabcera:*/
+				}
+/*Con estos estilos aplicaremos diseño al contenido:*/
+
+                #main-content {
+                    background-image: rgb(255, 255, 255);
+                    width: 90%;
+                    max-width: 900px;
+                    margin: 20px auto;
+                    box-shadow: 0 0 10px rgba(0,0,0,.1);
+                }
+                
+                    #main-content header,
+                    #main-content .content {
+                        padding: 40px;
+                    }
+                    #main-footer {
+                        background: #333;
+                        color: white;
+                        text-align: center;
+                        padding: 5px;
+                        margin-top: 5px;
+                    }
+                        #main-footer p {
+                            margin: 5xp;
+                        }
+                        
+                        #main-footer a {
+                            color: white;
+                        }
+                        #main-header {
+                            background: #333;
+                            color: white;
+                            height: 80px;
+                            
+                            width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+                            left: 0; /* Posicionamos la cabecera al lado izquierdo */
+                            top: 0; /* Posicionamos la cabecera pegada arriba */
+                            position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+                        }
+                        body {
+                            margin: 0;
+                            padding: 0;
+                            font-family: Helvetica, Arial, sans-serif;
+                            color: rgb(19, 9, 9);
+                            background: #f2f2f2; 
+                            font-size: 1em;
+                            line-height: 1.5em;
+                            
+                            padding-top: 70px; /* Relleno superior igual a la altura de la cabecera*/
+                        }
+                        .conteiner-all{
+                            width: 100%;
+                            max-width: 800px;
+                            margin: auto;
+                            padding: 30px;
+                            background: white;
+                            margin-top: 5px;
+                            border-top: 6px solid #65d6a6;
+
+
+                        }
+                        .title{
+                            font-size: 15px;
+                            margin-bottom: 20px;
+                        }
+
+                        .conteiner-all img{
+                            width: 249px;
+                            float: right;
+                            margin-right: 10xp;
+                            margin-bottom: 10xp;
+                        }
+                        .conteiner-all p{
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            font-size: 18px;
+                            font-weight: 40;
+                            
+                        }
+                        .conteiner-all .img-container {
+                            box-sizing: border-box;
+                            -webkit-box-sizing: border-box;
+                            float: left;
+                            width: 1.5em;
+                            padding: 5px;
+                            
+
+                          }
+                          .conteiner-all .img-container img{
+                            width: 70PX;
+                          }
